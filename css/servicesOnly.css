@@ -1,0 +1,158 @@
+#chartContainer{
+    box-shadow: 10px 10px 30px rgb(24, 28, 32)
+    ,-10px -10px 30px rgb(24, 28, 32);
+}
+table ,th,td,tr{
+    border: unset;
+    border-collapse: collapse;
+}
+table{
+    position: relative;
+    width: 100%;
+
+}
+.noscroll{
+    width: 100%;
+    height: 400px;
+    overflow:auto;
+}
+tr{
+    text-align: center;
+    color: grey;
+}
+th{
+    padding: 15px 0;
+    background-color: rgb(107, 107, 107);
+    color: rgb(236, 232, 232);
+}
+tr:nth-child(odd){
+    background-color: lightgray;
+}
+tr:nth-child(even){
+    background-color: rgb(236, 232, 232);
+}
+tr:hover{
+    background-color: rgb(178, 209, 218);
+}
+
+/* sideBar */
+
+.sideBar{
+    background-color: #181C20;
+    font-family: Helvetica ,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    transition: width 2s;
+    min-height: 100vh;
+}
+.list{
+    overflow: hidden;
+} 
+.list li:hover{     
+    background-color: black;
+}
+.list li {
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.list>li {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid rgb(39, 44, 49);
+}
+.subList {
+    width: 100%;
+}
+.subList li{
+    width: 90%;
+    margin: auto;
+    height: 35px;
+    border-bottom:1px solid rgb(39, 44, 49);
+    line-height: 30px;
+    transition-property: height;       
+    transition-duration: .4s; 
+    overflow: hidden;
+}
+.subList li:hover{
+    background-color: rgb(39, 44, 49);
+    border-right: 2px solid white;
+    border-left: 2px solid rgb(39, 44, 49);
+}
+svg{
+    width: 30px;
+    float: right;
+    margin: 10px 10px;
+    background-color: white;
+    border-radius: 30px;
+    transition-duration: .4s;
+    transform: rotate(180deg);
+
+}
+.list-item{
+    background-color: black;
+}   
+.sideBar-toggle{
+    position: fixed;
+    left: 20%;
+    padding: 5px;
+    border-radius: 3px;
+    
+    transition-duration: .5s;
+    cursor: pointer;
+}
+.sideBar-toggle:hover .one{
+    background-color: #181C20;
+    transition-duration: .5s;
+}
+.sideBar-toggle:hover .two{
+    background-color: #181C20;
+    transition-duration: .5s;
+}
+.sideBar-toggle:hover .three{
+    background-color: #181C20;
+    transition-duration: .5s;
+}
+.sideBar-toggle .one,
+.sideBar-toggle .two,
+.sideBar-toggle .three{
+    background-color: #254E59;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    border: 1px solid rgb(24, 28, 32);
+    margin-left:12px;
+    transition: all 250ms;
+}
+
+.sideBar-toggle .two{
+    margin-left: 0px;
+}
+.list-item.active{
+    background-color:unset;
+}
+svg.active{
+    transform: rotate(0deg);
+}
+.subList.active li{
+    border-bottom: unset;
+    height: 0px;
+}
+.sideBar.open {
+    width: 0%;
+}
+.open .sideBar-toggle{
+    left: 0;
+}
+.open .two{
+    margin-left: 12px;
+}
+.open .one,.open .three{
+    margin-left: 0px;
+}

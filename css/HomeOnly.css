@@ -1,0 +1,42 @@
+
+ .pimg1{
+    background: url(../Images/1.jpg) no-repeat;
+    min-height:120%;
+}
+.pimg2{
+    background: url(../Images/Statistics.png) no-repeat;
+    min-height:500px;
+}
+.pimg3{
+    background: url(../Images/condastats-blog-1024x550.png) no-repeat;
+    min-height:500px;
+}
+.parallax{
+    position: relative;
+    background-size: cover;
+    opacity: 0.7;
+    background-attachment: fixed;
+    min-height:120%;
+}
+.span-img{
+    display: block;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+}
+.text{
+    height: 250px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    padding: 50px 0 ;
+    /* color: rgb(132, 230, 230); */
+    border-top:1px solid  rgb(132, 230, 230);
+    border-bottom:1px solid  rgb(132, 230, 230);
+    border-radius: 15px;
+    background-color: #254E59;
+
+}
