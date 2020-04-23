@@ -27,7 +27,7 @@
     let subList=document.querySelectorAll('.subList');
     subList.forEach(element => {
     element.addEventListener('click',(e)=>{
-        let url = 'Services.php?'; // Début de l'URL
+        let url = 'index.php?'; // Début de l'URL
         url += 'module=' +e.target.id; // On ajoute les valeurs 
         document.location.href = url; // Et on envoie à PHP
     });

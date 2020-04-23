@@ -9,9 +9,15 @@ body,html{
     margin: 0;
     box-sizing: border-box;
 }
-a{
-    color: white;
-    text-decoration: none;
+.unselected{
+    /* pour empecher la selection de texte et d'image */
+        -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+           -khtml-user-select: none; /* Konqueror HTML */
+             -moz-user-select: none; /* Old versions of Firefox */
+              -ms-user-select: none; /* Internet Explorer/Edge */
+                  user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome, Opera and Firefox */
 }
 .container{
     width: 80%;
@@ -110,17 +116,37 @@ input::placeholder{
     font-weight: 500;
     line-height: 50px;
     margin-right: 100px;
+    cursor: pointer;
 }
 #firstList li {
     float: left;
     list-style-type: none;
     padding: 0px 10px;
 }
-#firstList li a:hover,
-#menu-list li a:hover,
-#current a {
+#firstList li:hover,
+#menu-list li:hover,
+#current  {
     color: #254E59;
     transition: color 0.3s;
+}
+.sign{
+    font-size: 0.7em ;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #254E59;
+    color: white;
+    border-radius: 6px;
+    height: 40px;
+    margin-top: 10px;
+    line-height: 40px;
+    margin-left: 5px;
+}
+#firstList .sign:hover{
+    color:white ;
+    box-shadow: 1px 1px 10px #254E59 ;
+}
+#firstList .sign:active{
+    transform: scale(0.9);
 }
 #Menu{
     float: right;
@@ -190,6 +216,8 @@ footer p {
     top: -70px;
     right: 10px ;
 
+    cursor: pointer;
+    
     background-color: rgba(24, 28, 32,0.7);
     width: 100px;
     border: 1px solid #254E59;
