@@ -129,7 +129,7 @@ input::placeholder{
     color: #254E59;
     transition: color 0.3s;
 }
-.sign{
+/* .sign{
     font-size: 0.7em ;
     font-weight: bold;
     letter-spacing: 1px;
@@ -140,7 +140,7 @@ input::placeholder{
     margin-top: 10px;
     line-height: 40px;
     margin-left: 5px;
-}
+} */
 #firstList .sign:hover{
     color:white ;
     box-shadow: 1px 1px 10px #254E59 ;

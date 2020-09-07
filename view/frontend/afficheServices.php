@@ -3,7 +3,7 @@
 
 <!-- add link to files css -->
 <?php ob_start(); ?>
-    <link rel="stylesheet" href="css/servicesOnly.css">
+    <link rel="stylesheet" href="public/css/servicesOnly.css">
 <?php $css = ob_get_clean(); ?>
 
 <!-- some other fonctionality of services -->
@@ -102,10 +102,10 @@
         var PAJ=<?php echo json_encode($PAJ);?>;
         var module=<?php echo json_encode($module);?>;
     </script>
-    <script src="JS/canvasjs.min.js"></script>
-    <script src="JS/Chart.js"> </script>
-    <script src="JS/Aside.js"></script>
-    <script src="JS/search.js"></script>
+    <script src="public/JS/canvasjs.min.js"></script>
+    <script src="public/JS/Chart.js"> </script>
+    <script src="public/JS/Aside.js"></script>
+    <script src="public/JS/search.js"></script>
 
 <?php $script = ob_get_clean(); ?>
 
