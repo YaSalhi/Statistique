@@ -3,7 +3,7 @@
 
 <!-- add link to files css -->
 <?php ob_start(); ?>
-    <link rel="stylesheet" href="public/css/servicesOnly.css">
+    <link rel="stylesheet" href="public/css/ServicesOnly.css">
 <?php $css = ob_get_clean(); ?>
 
 <!-- some other fonctionality of services -->
@@ -29,33 +29,7 @@
                     <li id="UML_GL">UML & GL</li>
                 </ul>
             </ul>
-            <ul class="list">
-                <li id="EEA" class="list-item"><span class="list-toggle">EEA</span><svg aria-label="caret down icon" viewBox="0 0 24 24" role="img"><path d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"></path></svg></li>
-                <ul class="subList">
-                    <li>OS</li>
-                    <li>SGBDA</li>
-                    <li>RESEAU 1</li>
-                    <li>RO</li>
-                    <li>RESEAU 2</li>
-                    <li>POO</li>
-                    <li>WEB</li>
-                    <li>UML & GL</li>
-                </ul>
-            </ul>
-            <ul class="list">
-                <li id="TACQ" class="list-item"><span class="list-toggle">TACQ</span><svg aria-label="caret down icon" viewBox="0 0 24 24" role="img"><path d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"></path></svg></li></li>
-                <ul class="subList">
-                    <li>OS</li>
-                    <li>SGBDA</li>
-                    <li>RESEAU 1</li>
-                    <li>RO</li>
-                    <li>RESEAU 2</li>
-                    <li>POO</li>
-                    <li>WEB</li>
-                    <li>UML & GL</li>
-                </ul>
-            </ul>
-    </div>
+        </div>
     </aside>
     <section class="grid-row">
         <div id="chartContainer" style="height: 370px;"></div>
@@ -63,24 +37,7 @@
                 <div class="search-names">
                     <input type="text" id="filterInput" placeholder="Search names...">
                 </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Code Apogee</th>
-                            <th>Nom</th>
-                            <th>prenom</th>
-                            <th>OS</th>
-                            <th>POO</th>
-                            <th>SGBD</th>
-                            <th>RI1</th>
-                            <th>RI2</th>
-                            <th>AO_PA</th>
-                            <th>RO</th>
-                            <th>WEB</th>
-                            <th>UML_GL</th>
-                        </tr>
-                    </thead>
-                </table>
+
                 <div class="noscroll">
                         <?php afficheNotes($resultSet); ?>
                 </div>
@@ -106,6 +63,7 @@
     <script src="public/JS/Chart.js"> </script>
     <script src="public/JS/Aside.js"></script>
     <script src="public/JS/search.js"></script>
+    <script src="public/JS/student.js"></script>
 
 <?php $script = ob_get_clean(); ?>
 

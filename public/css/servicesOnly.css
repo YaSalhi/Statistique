@@ -1,6 +1,14 @@
-#chartContainer{
+[id^="chartContainer"]{
     box-shadow: 10px 10px 30px rgb(24, 28, 32)
     ,-10px -10px 30px rgb(24, 28, 32);
+    margin:20px 0 ;
+    display: inline-block;
+}
+#chartContainer{
+    float: left;
+}
+#chartContainer1{
+    float: left;
 }
 table ,th,td,tr{
     border: unset;

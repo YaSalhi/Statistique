@@ -7,10 +7,10 @@ use Model\Connection ;
 
 class NotesManager {
 
-    public function getNotes(){
+    public function getNotes($licence){
 
         $cnx = new Connection();
-        $orderSql = "select * from gi";
+        $orderSql = "select * from $licence";
         $prepared = $cnx->prepare($orderSql);
 
         $prepared->execute();

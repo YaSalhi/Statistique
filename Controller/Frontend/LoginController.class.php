@@ -61,7 +61,7 @@ class LoginController {
                     // $_SESSION["state"] = 'auth';
                     $_SESSION["auth"] = $user['id'];
 
-                    header("Location: index.php?currentPage=Services");
+                    header("Location: index.php?currentPage=GeneralStatistics");
                     
                 }else {
                     

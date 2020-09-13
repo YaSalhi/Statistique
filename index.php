@@ -8,7 +8,6 @@ require 'Controller/Frontend/LoginController.class.php';
 try{
 
     $loginController = new LoginController();
-    $notesController = new NotesController();
 
     if(!empty($_POST['email']) && !empty($_POST['password'])){
 
@@ -16,23 +15,32 @@ try{
 
     }elseif(isset($_GET['currentPage'])){
 
-        if($_GET['currentPage'] == 'Services'){
-            
-            $notesController->Services();
-            
-        }elseif($_GET['currentPage'] == 'Login'){
+        if($_GET['currentPage'] == 'Login'){
         
             $loginController->showLoginForm();
+
+        }elseif($_GET['currentPage'] == 'Services'){
+            
+            (new NotesController())->Services();
+            
+        }elseif($_GET['currentPage'] == 'GeneralStatistics'){
+
+            (new NotesController())->GeneralStatistics();
+
         }
+
+    }elseif(isset($_GET['student'])){
+
+        (new NotesController())->studentData();
 
     }elseif(isset($_POST['logout']) && $_POST['logout'] == 'logout'){
         
         $loginController->logout();
         
     }elseif(isset($_GET['module'])){
-        $notesController->Services();
+            
+        (new NotesController())->Services();
 
-    
     }else{
 
         $loginController->showLoginForm();
